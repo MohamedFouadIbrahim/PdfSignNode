@@ -5,7 +5,9 @@ const path = require('path');
 const { mergeSignPDF } = require('./SignPDF');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
+app.use(express.static(path.join(__dirname, 'build')));
+
 
 // Enable CORS for all routes
 app.use(cors());
