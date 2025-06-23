@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
-const { mergeSignPDF } = require('./signPDF');
+const { mergeSignPDF } = require('./SignPDF');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
